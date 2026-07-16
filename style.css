@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(to bottom, #fec902, #ec4000);
+  overflow: hidden;
+  color: #fff;
+}
+
+h1 {
+  margin: 20px;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: #1a1a1a;
+  border: 5px solid #fff;
+}
+
+.snowflake {
+  position: fixed;
+  top: -10px;
+  color: #fff;
+  font-size: 12px;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
